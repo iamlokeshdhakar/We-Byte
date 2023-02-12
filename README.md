@@ -1,3 +1,3 @@
 # We-Byte
 
--Live Link: http://lokeshdhakar.me/We-Byte/
+-Live Link: https://lokeshdhakar97.github.io/We-Byte/
