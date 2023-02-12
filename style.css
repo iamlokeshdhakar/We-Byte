@@ -64,15 +64,3 @@ body {
     width: 100%;
     min-height: 100vh;
 }
-
-.main-page {
-    width: 100%;
-    height: 80vh;
-    background-color: var(--primary-bg);
-    color: var(--secondary-text);
-}
-
-.main-page h2 {
-    font-family: Open Sans;
-    font-weight: 100;
-}
