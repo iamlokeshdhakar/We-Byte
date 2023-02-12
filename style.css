@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@font-face {
+    font-family: Product Sans;
+    src: url(./assets/Fonts/Product\ Sans\ Regular.ttf);
+}
+
+@font-face {
+    font-family: Product Sans Bold;
+    src: url(./assets/Fonts/Product\ Sans\ Bold.ttf);
+}
+
+@font-face {
+    font-family: Product Sans Italic;
+    src: url(./assets/Fonts/Product\ Sans\ Italic.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: rgb(243, 243, 243);
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 9px;
+    background-color: rgb(210, 203, 203);
+}
+
+::-webkit-scrollbar-track {
+    width: 10%;
+    background-color: #4e4b4b;
+}
+
+
+/* Constaint CSS */
+
+/* 
+#FD1E57  #FD3567  #FD4B77
+
+#FD6188 #FD7899
+
+#FE8EAA  #FEA5BB */
+
+:root {
+    --primary-bg: #FD1E57;
+    --secondary-bgc: #FD6188;
+    --primary-text: black;
+    --secondary-text: white;
+}
+
+.hero-section {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.main-page {
+    width: 100%;
+    height: 80vh;
+    background-color: var(--primary-bg);
+    color: var(--secondary-text);
+}
+
+.main-page h2 {
+    font-family: Open Sans;
+    font-weight: 100;
+}
