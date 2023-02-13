@@ -26,7 +26,7 @@ html,
 body {
     width: 100%;
     height: 100%;
-    background: rgb(243, 243, 243);
+    background: rgb(248, 237, 237);
 }
 
 ::-webkit-scrollbar {
@@ -58,6 +58,8 @@ body {
     --secondary-bgc: #FD6188;
     --primary-text: black;
     --secondary-text: white;
+    --sec-sec-text: rgb(247, 246, 246);
+
 }
 
 .hero-section {
@@ -65,100 +67,134 @@ body {
     min-height: 100vh;
 }
 
-.intro-page {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 70vh;
-    width: 90vw;
+.navbar-sec {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 10px;
+    z-index: 99;
+}
+
+.nav-left {
+    width: 45%;
+    height: 100%;
+}
+
+.center-nav {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+.center-nav img {
+    height: 90px;
+    margin-top: 5px;
+    z-index: 99;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 45%;
+    height: 100%;
+    /* background-color: aqua; */
+    padding: 0px 20px;
+}
+
+.intro-first-page {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 80vh;
+    padding: 15px 50px;
+    width: 95%;
     background-color: var(--primary-bg);
     border-radius: 20px;
     color: var(--secondary-text);
+    z-index: 9;
 }
 
-.intro-l {
-    position: absolute;
-    left: 4%;
-    top: 15%;
+.intro-headings-part {
     width: 44%;
+    max-height: 80%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
+    font-family: Product Sans;
+
 }
 
-.intro-l h5 {
-    font-family: Product Sans;
+.intro-headings-part span {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 500;
+    font-weight: 600;
+    color: rgb(9, 255, 185);
+    margin-left: 5px;
     font-size: .9vw;
 }
 
-.intro-l h1 {
+.intro-headings-part h1 {
     font-family: Product Sans Bold;
     font-size: 3.8vw;
 }
 
-.intro-l p {
-    font-family: Product Sans;
-    width: 70%;
+.intro-headings-part p {
+    color: var(--sec-sec-text);
+    font-size: 13px;
 }
 
-.intro-btm button {
+.intro-headings-part button {
     padding: 12px 22px;
-    border-radius: 10px;
+    border-radius: 8px;
+    font-weight: 600;
     border: none;
     font-family: Product Sans;
     text-transform: uppercase;
     color: var(--secondary-bgc);
     cursor: pointer;
+    width: fit-content;
+    font-size: 12px;
 }
 
-.intro-r {
+.intro-right-pannels {
+    max-height: 90%;
+    width: 20%;
+}
+
+.ir-pannels {
+    position: relative;
+    width: 100%;
+    height: 7vw;
+    margin-top: 5px;
+}
+
+.ir-pannels img {
+    width: 100%;
+    height: 100%;
+}
+
+.ir-pannels-cnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top: 5%;
-    right: 2%;
-}
-
-.intro-r .clip {
-    height: 25vw;
-    width: 25vw;
-}
-
-#clip-one img {
-    position: absolute;
-    right: 2%;
-    width: 60%;
-}
-
-#clip-two img {
-    position: absolute;
-    top: 15%;
-    right: 2%;
-    width: 60%;
-}
-
-.intro-r #clip-three {
-    position: absolute;
-    top: 32%;
-    right: 3%;
-    border-radius: 10px;
-    height: 15vw;
-    width: 14.5vw;
-    background-color: var(--secondary-text);
+    width: 100%;
     color: var(--primary-text);
-    font-family: Product Sans;
-    padding: 2rem;
+    height: 100%;
 }
 
-/* #clip-three h5 {
-    margin-top: 1rem;
-} */
-
-#clip-three button {
-    padding: 12px 22px;
-    background-color: var(--primary-text);
-    color: var(--secondary-text);
-    font-family: Product Sans;
+.ir-pannels:nth-child(3) {
+    height: 15vw;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
 }
