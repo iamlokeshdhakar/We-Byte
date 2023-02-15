@@ -81,8 +81,19 @@ body {
 }
 
 .nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     width: 45%;
     height: 100%;
+}
+.nav-left a{
+    text-decoration: none;
+    margin-right: 2vw;
+    font-family: Product Sans;
+    font-size: 14px;
+    color: var(--primary-text);
+
 }
 
 .center-nav {
@@ -106,6 +117,23 @@ body {
     /* background-color: aqua; */
     padding: 0px 20px;
 }
+.nav-icons{
+    font-size: 23px;
+    margin-right: 2vw;
+    color: rgb(0, 0, 0);
+}
+.right-nav button{
+    padding: 6px 15px;
+    margin-right: 2vw;
+    border: none;
+    border: 1px solid var(--primary-bg);
+    background-color: #f792ab;
+    color: white;
+    font-family: Open Sans;
+    font-family: Product Sans;
+    border-radius: 6px;
+
+}
 
 .intro-first-page {
     position: relative;
@@ -114,7 +142,7 @@ body {
     justify-content: space-between;
     margin: 0 auto;
     height: 80vh;
-    padding: 15px 50px;
+    padding: 0px 50px;
     width: 95%;
     background-color: var(--primary-bg);
     border-radius: 20px;
@@ -171,9 +199,11 @@ body {
     cursor: pointer;
     width: fit-content;
     font-size: 12px;
+    white-space: nowrap;
 }
 
 .in-head-trend {
+    width: fit-content;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -186,6 +216,13 @@ body {
 .in-head-trend span {
     border-bottom: 1px solid #fff;
     font-size: .8rem;
+}
+
+.intro-center-img{
+    height: 100%;
+}
+.intro-center-img img{
+    height: 100%;
 }
 
 .intro-right-pannels {
@@ -238,15 +275,16 @@ body {
 }
 
 .ir-pannels:nth-child(3) {
-    height: 15vw;
+    min-height: 15vw;
     background-color: #fff;
     border-radius: 10px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     font-family: Product Sans;
-    padding: 35px;
+    padding-left: 30px;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    justify-content: center;
+    gap: .8rem;
 }
 
 .ir-pannels3 p {
@@ -265,4 +303,6 @@ body {
     width: fit-content;
     font-size: 14px;
     background-color: var(--primary-bg);
+    border-radius: 2px;
+    box-shadow: 0px 0px 6px 0px #f96d6d;
 }
