@@ -20,6 +20,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Product Sans;
+
 }
 
 html,
@@ -87,7 +89,8 @@ body {
     width: 45%;
     height: 100%;
 }
-.nav-left a{
+
+.nav-left a {
     text-decoration: none;
     margin-right: 2vw;
     font-family: Product Sans;
@@ -117,21 +120,27 @@ body {
     /* background-color: aqua; */
     padding: 0px 20px;
 }
-.nav-icons{
+
+.nav-icons {
     font-size: 23px;
     margin-right: 2vw;
     color: rgb(0, 0, 0);
 }
-.right-nav button{
+
+.right-nav button {
     padding: 6px 15px;
     margin-right: 2vw;
     border: none;
-    border: 1px solid var(--primary-bg);
-    background-color: #f792ab;
+    /* border: 1px solid var(--primary-bg); */
+    /* border: 1px solid var(--primary-text); */
+    /* background-color: #f792ab; */
+    background-color: var(--primary-bg);
+    box-shadow: 0px 0px 3px 0px #FD1E57;
     color: white;
     font-family: Open Sans;
     font-family: Product Sans;
     border-radius: 6px;
+    cursor: pointer;
 
 }
 
@@ -200,6 +209,7 @@ body {
     width: fit-content;
     font-size: 12px;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 .in-head-trend {
@@ -209,7 +219,7 @@ body {
     gap: 8px;
 }
 
-.in-head-trend img{
+.in-head-trend img {
     width: 8%;
 }
 
@@ -218,10 +228,11 @@ body {
     font-size: .8rem;
 }
 
-.intro-center-img{
+.intro-center-img {
     height: 100%;
 }
-.intro-center-img img{
+
+.intro-center-img img {
     height: 100%;
 }
 
@@ -305,4 +316,305 @@ body {
     background-color: var(--primary-bg);
     border-radius: 2px;
     box-shadow: 0px 0px 6px 0px #f96d6d;
+}
+
+/* Product Details Section */
+
+
+.test {
+    width: 100%;
+    height: 40vh;
+    background-color: grey;
+}
+
+
+.product-details {
+    width: 100%;
+    min-height: 150vh;
+    background-color: rgb(254, 254, 254);
+    padding-top: 100px;
+}
+
+.product-heading-section {
+    width: 90%;
+    height: 60vh;
+    margin: 0 auto;
+    background-color: #ff86a4;
+    border-radius: 40px;
+}
+
+.ph-headings {
+    display: flex;
+    width: 100%;
+    height: 30%;
+}
+
+.ph-cnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100%/3);
+    height: 100%;
+    font-family: Product Sans;
+}
+
+.ph-cnt a {
+    color: var(--secondary-text);
+    text-decoration: none;
+    font-family: Product Sans;
+}
+
+.ph-cnt a span {
+    color: var(--primary-text);
+}
+
+.ph-cnt h2 {
+    font-size: 2rem;
+    font-family: Product Sans;
+    font-family: Alegreya Sans SC;
+}
+
+.ph-arrow-icons {
+    display: flex;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.product-pannel {
+    display: flex;
+    width: 80%;
+    height: 70vh;
+    margin: 0 auto;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: rgba(223, 219, 219, 0.949);
+    background: linear-gradient(to top, #ff86a4, rgba(255, 255, 255, 0.825));
+    backdrop-filter: blur(100px);
+
+    /* From https://css.glass */
+}
+
+.pp-pannels {
+    height: 100%;
+}
+
+.pp-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+    padding-left: 30px;
+    padding-right: 15px;
+    font-family: Product Sans;
+}
+
+.pp-cnt-left {
+    width: 100%;
+}
+
+.pp-cnt-left p {
+    font-size: 12px;
+}
+
+.pp-cnt-left:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pp-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.pp-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.product-clr-outline {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    height: 25vw;
+    border-top: 1px solid #FD1E57;
+    border-bottom: 1px solid #FD1E57;
+    border-radius: 50%;
+}
+
+.product-clr {
+    width: 22vw;
+    height: 22vw;
+    background-color: rgba(247, 247, 247, 0.514);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.product-clr-top {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-clr-top img {
+    height: 80%;
+}
+
+.product-clr-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    font-family: Product Sans;
+    font-weight: 900;
+    font-size: 20px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    background-color: #FD1E57;
+}
+
+.pp-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding-left: 30px;
+    padding-right: 15px;
+}
+
+.pp-right-cnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.pp-rc {
+    font-family: Product Sans;
+    display: flex;
+    width: 100%;
+    min-height: 30%;
+}
+
+.pp-rc:nth-child(1){
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.size-boxs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.size-boxs a {
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Product Sans;
+    color: var(--primary-text);
+    background-color: rgb(255, 255, 255);
+}
+
+.pp-rc:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pp-rc button {
+    width: 100%;
+    padding: 10px 0px;
+    border: none;
+    background-color: rgb(59, 57, 57);
+    color: white;
+    border-radius: 10px;
+    font-family: Product Sans;
+}
+
+.pp-rc button:nth-child(2) {
+    background-color: #FD1E57;
+}
+
+
+.product-cards{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 15rem;
+    padding: 0px 80px;
+}
+
+.pc-heading{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 20%;
+
+}
+
+.pc-heading-left{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+.pc-heading-left h2{
+    font-family: Alegreya Sans SC;
+    font-size: 30px;
+}
+
+
+.pc-heading-right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    width: 40%;
+    height: 100%;
+}
+
+.pc-heading-right a{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(233, 228, 228);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.pc-cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 50px;
+}
+
+.cards{
+    width: 30%;
+    height: 55vh;
+    border-radius: 10px;
+    background-color: rgb(236, 234, 234);
 }
