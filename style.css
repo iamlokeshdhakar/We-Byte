@@ -607,7 +607,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    /* justify-content: center; */
     align-items: center;
     gap: 50px;
 }
@@ -617,4 +616,124 @@ body {
     height: 55vh;
     border-radius: 10px;
     background-color: rgb(236, 234, 234);
+}
+
+
+
+/* Atul Section */
+
+
+
+.Best-Sellers{
+    height:76vh;
+    width:95%;
+    background-color: rgb(225, 225, 244);     
+    margin:0 auto;
+    margin-top:100px;
+    border-radius: 10px;
+    padding-bottom: 24px;
+}
+.Best-Sellers h3{
+    padding:40px 10px 20px 28px;
+    font-size:40px;
+    margin-left:5px;
+    font-family: Product Sans Bold;
+    color:black;
+}
+.cards-container{
+    height:77%;
+    width:100%;
+    padding:0px 20px;
+    /* background-color: red; */
+    display: flex;
+    gap:20px;
+}
+.bs-cards{
+    width:75%;
+    height:100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap:20px;
+    padding:10px;
+}
+.card1{
+    height:100%;
+    width:32%;
+    background-color:white;
+    border-radius: 10px;
+    padding:10px;
+}
+.card1 img{
+    height:60%;
+    width:100%;
+    object-fit: cover;
+    border-radius:10px;
+}
+.price-sec{
+    height:35%;
+    width:100%;
+    margin-top:10px;
+
+    border-radius: 10px;
+    background-color: var(--secondary-bgc);
+    padding:20px;
+    padding-left:10px;
+    color:var(--secondary-text);
+    font-family: Product Sans;
+}
+.price-sec h2{
+    margin-bottom: 8px;
+
+}
+
+.less-op{
+    opacity:0.2;
+}
+
+
+.right-cards{
+    height:95%;
+    width:40%;
+    border-radius: 10px;
+    overflow-y: scroll;
+    padding:0px 5px;
+
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.card2{
+    height:35%;
+    width:90%;
+    border-radius: 10px;
+    background-color:white;
+    padding:20px;
+    margin:0 auto;
+    margin-top:20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:30px;
+    /* overflow: hidden; */
+}
+.card2:hover{
+    scale:1.1;
+   border-radius: 20px;
+   transition: cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.1s;
+}
+.card2 img{
+    height:80px;
+    width:80px;
+    border-radius: 50%;
+    background-color:rgb(241, 160, 174);
+}
+.card2 button{
+    padding:14px 26px;
+    border:none;
+    color:white;
+    border-radius: 10px;
+    background-color:var(--secondary-bgc);
+    font-family: product sans Bold;
 }
